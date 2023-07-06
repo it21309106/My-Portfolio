@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+		<meta name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>Uwani imasha - Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/f63ce4ec9e.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo1.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projectexperience">Project  Experience</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Undergraduate student</p>
+                    <h1>Hello, it's me <span>Uwani</span></h1>
+                </div>
+            </div>
+        </div>
+
+
+<!----------about---------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/user.jpeg">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an Information Technology student at the Sri Lanka
+                            Institute of Information Technology (SLIIT). I am mostly
+                            interested in web design and development. I am
+                            delighted to be starting a career in information
+                            technology as a dedicated IT student with a passion for
+                            technology and problem-solving. I am eager to apply my
+                            skills and knowledge to make a positive impact on the IT
+                            industry and the organization I will work for. I am also
+                            open to new challenges and opportunities to grow as a
+                            professional.</p>
+                            <div class="tab-titles">
+                                <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab('education')">Education</p>
+                            </div>
+                            <div class="tab-contents active-tab" id="skills">
+                                <ul>
+                                    <li><span>HTML</span></li>
+                                    <li><span>CSS</span></li>
+                                    <li><span>React JS</span></li>
+                                    <li><span>Node JS</span></li>
+                                    <li><span>Express JS</span></li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2012 - 2018</span><br>Samudradevi Balika Vidyalaya, Nugegoda</li>
+                                    <li><span>2018 - 2020</span><br>Gothami Balika Vidyalaya, Colombo 10</li>
+                                    <li><span>2021 - 2025</span><br>Sri Lanka Institute of information Technology</li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <a href="images/Uwani Imasha.pdf" download class="btn btn 2">Download CV</a>
+        </div>
+
+        <!--------project experience------>
+        <div id="projectexperience">
+            <div class="container">
+                <h1 class="sub-title">Project Experience</h1>
+                <div class="project-list">
+                    <div>
+                        <i class="fa-solid fa-spa"></i>
+                        <h2>Online Salon Management System</h2>
+                        <p>Our system provides a convenient and seamless platform for salon owners to manage their daily operations,
+                             streamline workflows, and enhance customer experiences. 
+                            <br>With just a few clicks, salon owners can effortlessly handle appointments, staff schedules, inventory, 
+                            and client data, optimizing their business efficiency.</p>
+                        
+                        <a href="https://github.com/it21309106/Online-Salaon-Management-System-ITP" class="git-link">Git hub Link</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <h2>Online Learning System</h2>
+                        <p>Introducing our new education app designed specifically for students! 
+                            In these uncertain times, we understand the financial difficulties that many students face when it comes to getting an education. 
+                            <br>Because of this, our app offers free access to excellent learning materials that will aid in your academic success.</p>
+                            <br>
+                            <br>
+                        <a href="https://github.com/it21309106/Lerning-App-">Git hub Link</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <h2>Online Customer Support System</h2>
+                        <p>An online customer support system is a software application that enables businesses to provide support to their customers through online channels. 
+                            The system typically includes a range of features such as chatbots, live chat support, email support, and social media support. 
+                            The main goal of an online customer support system is to improve customer satisfaction by providing prompt and effective support to customers. </p>
+                        <a href="https://github.com/it21309106/IWT-Project">Git hub Link</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <!----------contact--------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-solid fa-paper-plane"></i> uwaniimasha@gmail.com </p>
+                        <p><i class="fa-solid fa-square-phone"></i> 071-683-3969</p>
+                        <div class="social-icons">
+                            <a href="https://www.instagram.com/uwani_imasha/"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="https://www.linkedin.com/in/uwani-imasha-8b691a215/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/it21309106"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your name" required>
+                        <input type="email" name="Email" placeholder="E-mail" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright <i class="fa-regular fa-copyright"></i> Uwani Imasha</p>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+           
+
+        </script>
+
+        <script>
+
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function openmenu(){
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxpPIAcIBVc2eWgwn3TcI-PQteRo83oVAvg0BHNMll2jT_C_Ha_qGTKl2hTkwpvXRj2/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")
+        
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML ="Message sent succcessfully"
+                    setTimeout(function(){
+                        msg.innerHTML = ""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+
+    </body>
+</html>
